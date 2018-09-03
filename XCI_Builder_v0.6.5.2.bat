@@ -403,7 +403,7 @@ MD nspDecrypted\update
 echo.
 echo ************************************************************************************************************************
 echo.
-"%~dp0\ztools\hacbuild.exe" xci_auto "%~dp0\nspDecrypted"  "%~dp0\nspDecrypted\!filename![xcib].xci" 
+"%~dp0ztools\hacbuild.exe" xci_auto "%~dp0nspDecrypted"  "%~dp0nspDecrypted\!filename![xcib].xci" 
 RD /S /Q "%~dp0\nspDecrypted\secure"
 RD /S /Q "%~dp0\nspDecrypted\normal"
 RD /S /Q "%~dp0\nspDecrypted\update"
