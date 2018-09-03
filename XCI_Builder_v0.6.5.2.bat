@@ -124,6 +124,7 @@ echo hactool v1.2.0  by SciresM
 echo --------------
 "%~dp0\ztools\hactool.exe" -k "%~dp0\ztools\keys.txt" -t pfs0 --pfs0dir=nspDecrypted\rawsecure "%~1"
 echo.
+
 ::Delete .jpg files if BBB dump
 if exist nspDecrypted\rawsecure\*.jpg del nspDecrypted\rawsecure\*.jpg
 ::List .nca files in directory
@@ -173,11 +174,9 @@ set filename=!filename![nm]
 ::Process for nsp without manual or nest step if we have a manual
 set meta_xml=nspDecrypted\rawsecure\*.cnmt.xml
 if exist nspDecrypted\id.txt del nspDecrypted\id.txt
-
 FINDSTR /N /I "<id>" %meta_xml%>nspDecrypted\id.txt
 
 ::Identify the control nca and set it in a variable for next steps
-
 FINDSTR /N "Control" %meta_xml%>nspDecrypted\iscontrolnca.txt
 for /f "tokens=2* delims=: " %%a in (nspDecrypted\iscontrolnca.txt) do (
 set control_pos=%%a)
@@ -433,19 +432,5 @@ echo       \    \
 
 PING -n 5 127.0.0.1 >NUL 2>&1
 exit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
