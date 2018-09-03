@@ -55,17 +55,19 @@ del "ztools\python.txt"
 
 if "%~x1"==".nsp" (goto nsp)
 if "%~x1"==".xci" (goto xci)
-echo This program works dragging an nsp file over it's bat file
+echo XCI_Builder v0.6.5.2 by julesontheroad
 echo.
-echo It also works with XCI_Builder_v0.6.4.bat "filename.nsp" over the command line
+echo A batch file made to automate nsp to xci files conversion via hacbuild
 echo.
-echo It's function is to convert nsp files to xci files
+echo Just drag and drop. Drag a nsp file into XCI_Builder .bat and it'll take care of everything
 echo.
-echo.Remember, you'll need to install the small _lc.nsp to get your .xci working in SX OS
+echo XCI_Builder's author is not responsible for any problems that may occur in your system
 echo.
-echo.You can install this less than 1mb file with SX OS custom installer
+echo hacbuild made by LucaFraga https://github.com/LucaFraga/hacbuild
 echo.
-echo.XCI_Builder's author it's not responsibleof any problems it may derive in your system
+echo hactool made by SciresM https://github.com/SciresM/hactool
+echo.
+echo nspBuild made by CVFireDragon https://github.com/CVFireDragon/nspBuild
 echo.
 pause
 exit
