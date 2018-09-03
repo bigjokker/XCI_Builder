@@ -45,10 +45,10 @@ set filename=%%~ni
 CD /d "%~dp0"
 
 
-::check if Python 2.7 is availible to run nspBuild.py
+::check if Python is availible to run nspBuild.py
 where python.exe> "ztools\python.txt"
-FINDSTR "Python27" "ztools\python.txt">nul 2>&1
-if %ERRORLEVEL%==1 echo Python 2.7 needs to be installed to build "GameTitle[lc].nsp"
+FINDSTR "Python" "ztools\python.txt">nul 2>&1
+if %ERRORLEVEL%==1 echo Python needs to be installed to build "GameTitle[lc].nsp"
 if %ERRORLEVEL%==1 echo.
 if %ERRORLEVEL%==1 pause
 del "ztools\python.txt"
