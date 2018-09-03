@@ -418,7 +418,7 @@ echo Process finished!
 echo.
 echo Your files should be in the output_xcib folder!
 endlocal
-PING -n 4 127.0.0.1 >NUL 2>&1
+PING -n 5 127.0.0.1 >NUL 2>&1
 echo.
 echo    /@
 echo    \ \
@@ -429,8 +429,7 @@ echo (____@)   \
 echo (__o)_    \
 echo       \    \
 
-PING -n 2 127.0.0.1 >NUL 2>&1
-pause
+PING -n 5 127.0.0.1 >NUL 2>&1
 exit
 
 
